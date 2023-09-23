@@ -1,0 +1,18 @@
+{
+  "cSpell.words": ["onboarded"],
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.cursorStyleInactive": "outline",
+  "notebook.cellFocusIndicator": "border",
+  "search.seedOnFocus": true,
+  "terminal.integrated.cursorStyle": "block",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "editor.tabFocusMode": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "search.seedWithNearestWord": true,
+  "editor.columnSelection": false,
+  "workbench.list.defaultFindMode": "filter",
+  "workbench.list.defaultFindMatchType": "contiguous"
+}
