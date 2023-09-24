@@ -58,7 +58,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 
           <TabsContent value="members" className="mt-9 text-light-1 w-full">
             <section className="mt-9 flex flex-col gap-10">
-              {communityDetails.members.map((member: any) => (
+              {communityDetails.members.map((member) => (
                 <UserCard
                   key={member.id}
                   id={member.id}

@@ -5,7 +5,7 @@ import { connectToDB } from "../mongoose";
 import User from "../schemas/User";
 import Community from "../schemas/Community";
 import Thread from "../schemas/Thread";
-import { IUser } from "@/types/schema";
+import { ICommunity, IUser } from "@/types/schema";
 
 export const createCommunity = async (
   id: string,
@@ -48,7 +48,9 @@ export const createCommunity = async (
   }
 };
 
-export const fetchCommunityDetails = async (id: string) => {
+export const fetchCommunityDetails = async (
+  id: string
+): Promise<ICommunity> => {
   try {
     connectToDB();
 
@@ -112,7 +114,7 @@ export const fetchCommunities = async ({
   pageNumber?: number;
   pageSize?: number;
   sortBy?: SortOrder;
-}) => {
+}): Promise<{ communities: ICommunity[]; isNext: boolean }> => {
   try {
     connectToDB();
 
@@ -137,7 +139,7 @@ export const fetchCommunities = async ({
     const sortOptions = { createdAt: sortBy };
 
     // Create a query to fetch the communities based on the search and sort criteria.
-    const communitiesQuery = Community.find(query)
+    const communitiesQuery = Community.find<ICommunity>(query)
       .sort(sortOptions)
       .skip(skipAmount)
       .limit(pageSize)

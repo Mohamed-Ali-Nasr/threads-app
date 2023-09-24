@@ -21,6 +21,7 @@ export type IThread = {
 };
 
 export type ICommunity = {
+  _id: string;
   id: string;
   username: string;
   name: string;
@@ -30,15 +31,3 @@ export type ICommunity = {
   threads: IThread[];
   members: IUser[];
 };
-
-// interface result {
-//   _id: string;
-//   id: string;
-//   bio: string;
-//   communities: [];
-//   image: string;
-//   name: string;
-//   onboarded: boolean;
-//   threads: IThread[];
-//   username: string;
-// }

@@ -27,7 +27,6 @@ const ThreadCard = ({
   comments,
   isComment,
 }: Props) => {
-  console.log("🚀 ~ file: ThreadCard.tsx:30 ~ parentId:", parentId);
   return (
     <article
       className={`flex w-full flex-col rounded-xl ${

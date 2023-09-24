@@ -14,5 +14,5 @@
   "search.seedWithNearestWord": true,
   "editor.columnSelection": false,
   "workbench.list.defaultFindMode": "filter",
-  "workbench.list.defaultFindMatchType": "contiguous"
+  "workbench.list.defaultFindMatchType": "fuzzy"
 }

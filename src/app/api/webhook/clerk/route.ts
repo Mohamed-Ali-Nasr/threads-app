@@ -1,7 +1,6 @@
 /* eslint-disable camelcase */
 // Resource: https://clerk.com/docs/users/sync-data-to-your-backend
 // Above article shows why we need webhooks i.e., to sync data to our backend
-// we will deploying this app to be able to expose this api route (api/webhook/clerk/route) that will then be able to add as the endpoint
 
 // Resource: https://docs.svix.com/receiving/verifying-payloads/why
 // It's a good practice to verify webhooks. Above article shows why we should do it
