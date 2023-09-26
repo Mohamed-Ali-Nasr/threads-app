@@ -6,8 +6,6 @@ import { fetchUser } from "@/lib/actions/user";
 import { fetchThreadById } from "@/lib/actions/thread";
 import { ICommunity } from "@/types/schema";
 
-export const revalidate = 0;
-
 const Page = async ({ params }: { params: { id: string } }) => {
   if (!params.id) return null;
 
